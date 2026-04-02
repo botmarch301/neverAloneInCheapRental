@@ -26,6 +26,18 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
+# Unity
+unity-project/Library/
+unity-project/Temp/
+unity-project/Obj/
+unity-project/Build/
+unity-project/Builds/
+unity-project/Logs/
+unity-project/UserSettings/
+unity-project/MemoryCaptures/
+unity-project/Recordings/
+unity-project/Assets/Plugins/Editor/JetBrains*
+
 # Project specific
 *.png
 *.jpg
