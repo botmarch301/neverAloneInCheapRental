@@ -1,0 +1,167 @@
+{
+  "scripts": [
+    {
+      "id": "act1_first_night_01",
+      "act": 1,
+      "trigger": "first_sleep",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "...밤이 깊었다.",
+          "effect": null,
+          "duration": 0,
+          "bgm": "night_ambient",
+          "sfx": null,
+          "background": "room_night",
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "낯선 천장. 낯선 냄새. 처음 잠을 자는 집.",
+          "effect": null,
+          "duration": 0,
+          "bgm": null,
+          "sfx": null,
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "...이상한 소리가 들린다.",
+          "effect": "screen_shake",
+          "duration": 0.5,
+          "bgm": null,
+          "sfx": "creak_01",
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "아무것도 아니겠지.",
+          "effect": null,
+          "duration": 0,
+          "bgm": null,
+          "sfx": null,
+          "background": null,
+          "spriteChange": null,
+          "choices": [
+            {
+              "text": "무시하고 잔다",
+              "next": "act1_first_night_ignore",
+              "condition": null,
+              "effects": [
+                {
+                  "type": "stat_modify",
+                  "target": "SAN",
+                  "value": -2
+                }
+              ]
+            },
+            {
+              "text": "일어나서 확인한다",
+              "next": "act1_first_night_check",
+              "condition": null,
+              "effects": [
+                {
+                  "type": "stat_modify",
+                  "target": "SAN",
+                  "value": -5
+                }
+              ]
+            }
+          ],
+          "next": null,
+          "condition": null
+        }
+      ]
+    },
+    {
+      "id": "act1_first_night_ignore",
+      "act": 1,
+      "trigger": null,
+      "lines": [
+        {
+          "speaker": null,
+          "text": "이불을 끌어올렸다. 눈을 감았다.",
+          "effect": "fade_black",
+          "duration": 1.0,
+          "bgm": null,
+          "sfx": null,
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "...잠이 오지 않았다.",
+          "effect": null,
+          "duration": 0,
+          "bgm": null,
+          "sfx": "heartbeat_slow",
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        }
+      ]
+    },
+    {
+      "id": "act1_first_night_check",
+      "act": 1,
+      "trigger": null,
+      "lines": [
+        {
+          "speaker": null,
+          "text": "이불을 걷어차고 일어났다.",
+          "effect": null,
+          "duration": 0,
+          "bgm": null,
+          "sfx": "footstep_01",
+          "background": "room_night_standing",
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "...아무것도 없다. 당연하지.",
+          "effect": null,
+          "duration": 0,
+          "bgm": null,
+          "sfx": null,
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        },
+        {
+          "speaker": null,
+          "text": "그런데 왜 이렇게 춥지?",
+          "effect": "temperature_drop",
+          "duration": 0.3,
+          "bgm": "tension_low",
+          "sfx": null,
+          "background": null,
+          "spriteChange": null,
+          "choices": null,
+          "next": null,
+          "condition": null
+        }
+      ]
+    }
+  ]
+}
